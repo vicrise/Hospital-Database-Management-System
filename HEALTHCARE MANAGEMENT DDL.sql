@@ -1,4 +1,4 @@
-CREATE DATABASE VICRISE_HOSPITAL
+CREATE DATABASE Hospital-Database-Management-System
 
 -- Drop existing tables if needed
 DROP TABLE IF EXISTS Billing,
@@ -39,9 +39,6 @@ CREATE TABLE Doctors (
 );
 
 
-
-SELECT * FROM Doctors
-SELECT * FROM Patients
 -- Appointments Table
 CREATE TABLE Appointments (
     AppointmentID INT IDENTITY (10,1) PRIMARY KEY,
@@ -67,7 +64,7 @@ CREATE TABLE Admissions (
 );
 
 
-select * from Admissions
+
 -- MedicalRecords Table
 CREATE TABLE MedicalRecords (
     RecordID INT IDENTITY (1,1) PRIMARY KEY,
